@@ -2,18 +2,19 @@
 
 ## Description
 
-TODO
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+- My motivation for this project was to consume less time writing readme's.
+- I build this project because I wanted be able to quickly generate a new readme for a new project.
+- It solves the problem of wasted time!
+- I learned how to interpolate variables into the markup and access node packages.
 
 ## Installation
 
-TODO
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+In order to get this project up and running...
+
+- Clone the repo.
+- Open integrated terminal inside of Develop.
+- Run "npm install" followed by "npm install inquirer".
+- Then, simply run node index.js to create your README.
 
 ## Usage
 
