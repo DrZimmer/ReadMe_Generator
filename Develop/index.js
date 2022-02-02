@@ -5,7 +5,7 @@ const fs = require('fs');
 
 // TODO: Create an array of questions for user input (INQUIRER QUESTIONS HERE)
 
-const questions = () => {
+const begin = () => {
   console.log(`
         ------------------------------------
            Create a README ( * = Required )
@@ -131,11 +131,19 @@ const writeToFile = data => {
     }
   })
 };
-// TODO: Create a function to initialize app
-function init() {
 
-};
+// function call to initialize app
+begin();
 
-// Function call to initialize app
-// init();
-writeToFile();
+//inquirer input answer promise resolved here
+.then(answers => {
+  return generateMarkdown(answers);
+})
+
+.then(data => {
+  return writeToFile(data);
+})
+
+.catch(err => {
+  console.log(err)
+})
