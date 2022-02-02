@@ -144,7 +144,6 @@ const writeToFile = (fileName, data) => {
 // function call to initialize app
 const initialize = () => {
   begin();
-  //writeToFile(README.md);
 };
 
 initialize();

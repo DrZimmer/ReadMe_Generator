@@ -1,5 +1,5 @@
 # c
-
+  [![License](https://img.shields.io/badge/license-mit-blue.svg)] 
   ## Description
   d
 
@@ -15,8 +15,8 @@
   e
   
   ## License
-  [![License](https://img.shields.io/badge/license-mit-blue.svg)] 
   https://choosealicense.com/licenses/mit/
+  This project is licensed under mit
 
   ## Usage
   npm install and npm install inquirer
