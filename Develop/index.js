@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input (INQUIRER QUESTIONS HERE)
+//  user input INQUIRER QUESTIONS HERE
 
 const begin = () => {
   console.log(`
@@ -82,8 +82,8 @@ const begin = () => {
       type: 'list',
       name: 'license',
       message: 'What kind of license should your project have?',
-      choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
-      default: ['MIT']
+      choices: ['mit', 'apache-2.0', 'gpl-3.0', 'bsd-3-clause', 'None'],
+      default: ['mit']
     },
     {
       type: 'input',
@@ -116,11 +116,22 @@ const begin = () => {
       message: 'What does the user need to know about contributing to the repo?'
     },
   ])
+  .then(answers => {
+    return generateMarkdown(answers);
+  })
+  
+  .then(data => {
+    return writeToFile(data);
+  })
+  
+  .catch(err => {
+    console.log(err)
+  })
 };
 
-// TODO: Create a function to write README file
-const writeToFile = data => {
-  fs.writeFile('README.md', data, err => {
+// Function to write README file
+const writeToFile = (fileName, data) => {
+  fs.writeFile(fileName, data, err => {
     //if error occurs
     if (err) {
       console.log(err);
@@ -133,17 +144,9 @@ const writeToFile = data => {
 };
 
 // function call to initialize app
-begin();
+const initialize = () => {
+  begin();
+  writeToFile(README.md);
+};
 
-//inquirer input answer promise resolved here
-.then(answers => {
-  return generateMarkdown(answers);
-})
-
-.then(data => {
-  return writeToFile(data);
-})
-
-.catch(err => {
-  console.log(err)
-})
+initialize();
