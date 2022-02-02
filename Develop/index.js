@@ -112,7 +112,7 @@ const begin = () => {
     },
     {
       type: 'input',
-      name: 'contributors',
+      name: 'contribute',
       message: 'What does the user need to know about contributing to the repo?'
     },
   ])
