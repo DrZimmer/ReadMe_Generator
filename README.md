@@ -21,8 +21,8 @@ In order to get this project up and running...
 ## Usage
 
 Use inquirer from your command line to answer questions about your project.
-`md ![alt text](assets/images/node_inputs.png) `
-View the link: [Screencastify]
+![node_inputs](https://user-images.githubusercontent.com/91150259/152380205-373727e8-2327-4629-952a-81c0398fdd9b.png)
+View the link: [Screencastify] https://drive.google.com/file/d/1c_Bdfb0hBJms-xrw3qTMYDwrtMhgXIXq/view
 
 ## Contributing
 
