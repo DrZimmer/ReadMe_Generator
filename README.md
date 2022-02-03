@@ -1,9 +1,11 @@
 # <ReadMe Generator>
 
+[![License](https://img.shields.io/badge/license-mit-blue.svg)]
+
 ## Description
 
 - My motivation for this project was to consume less time writing readme's.
-- I build this project because I wanted be able to quickly generate a new readme for a new project.
+- I built this project because I wanted be able to quickly generate a new readme for a new project.
 - It solves the problem of wasted time!
 - I learned how to interpolate variables into the markup and access node packages.
 
@@ -18,6 +20,7 @@ In order to get this project up and running...
 
 ## Usage
 
+Use inquirer from your command line to answer questions about your project.
 TODO
 Provide instructions and examples for use. Include screenshots as needed.
 
@@ -29,15 +32,11 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-TODO not sure about this one
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+Contributors can use the installation instructions.
 
 ## License
 
-MIT License
+This project is licensed under mit
+https://choosealicense.com/licenses/mit/
 
 Copyright (c) [2022] [DanielZimmermann]
