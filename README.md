@@ -21,16 +21,10 @@ In order to get this project up and running...
 ## Usage
 
 Use inquirer from your command line to answer questions about your project.
-TODO
-Provide instructions and examples for use. Include screenshots as needed.
+`md ![alt text](assets/images/node_inputs.png) `
+View the link: [Screencastify]
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
-## Credits
+## Contributing
 
 Contributors can use the installation instructions.
 
